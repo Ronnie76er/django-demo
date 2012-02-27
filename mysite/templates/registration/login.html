@@ -26,4 +26,33 @@
 <input type="hidden" name="next" value="/users/" />
 </form>
 
+<div>
+<h2>Logins</h2>
+<table border="1">
+	<tr>
+
+ 		<th>Username</th>
+ 		<th>Password</th>
+ 		<th>Permission Level</th>
+
+	</tr>
+	<tr>
+		<td>admin</td>
+		<td>password123</td>
+		<td>Access to all</td>
+	</tr>
+	<tr>
+		<td>regular</td>
+		<td>password</td>
+		<td>Does not have access to specific user information page</td>
+	</tr>
+	<tr>
+		<td>elevated</td>
+		<td>password</td>
+		<td>Not as much as admin, but access specifically to the user info page</td>
+	</tr>
+</table>
+
+</div>
+
 {% endblock %}
