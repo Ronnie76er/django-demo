@@ -8,8 +8,13 @@ class TestUser(models.Model):
 		return self.username
 
 class UserInfo(models.Model):
+
+	class Meta:
+		permissions = (
+			('view_user_info', "Can view the users info"),
+		)
+
+
 	user = models.ForeignKey(TestUser)
 	data_field1 = models.CharField(max_length=300)
 
-
-# Create your models here.
